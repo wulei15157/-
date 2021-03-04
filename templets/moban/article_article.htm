@@ -1,0 +1,149 @@
+{dede:include filename="header.htm"/}
+
+
+
+
+<!-- typography -->
+<section class="typo py-md-5">
+    <div class="container py-4 mt-2">
+        <h3 class="tittle-w3ls text-center mb-3">{dede:field.title/}</h3>
+        <p class="tit text-center mx-auto">Committed to become a professional company in the field of bearing and mechanical power transmission, and constantly improve service quality and products, solutions more reliable.
+        </p>
+        <div class="grid_3 grid_5 agileinfo">
+            <ol class="breadcrumb" id='daohang'>
+                {dede:field name='position' /}
+            </ol>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#daohang').children('a').addClass('breadcrumb-item')
+        });
+        </script>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-4 column">
+                    <img src="{dede:field.litpic /}">
+                </div>
+                <div class="col-md-4 column">
+                    <p><span>Brand:</span> {dede:field.brand /}</p>
+                    <p><span>Original:</span>{dede:field.original /}</p>
+                    <p><span>Type:</span>{dede:field.type /}</p>
+                    <p><span>Item:</span>{dede:field.item /}</p>
+                    <p><span>Inner:</span>{dede:field.internal /}</p>
+                    <p><span>Outner:</span>{dede:field.outner /}</p>
+                    <p><span>Thickness:</span>{dede:field.thickness /}</p>
+                    <p><span>Weight:</span>{dede:field.weight /}</p>
+                </div>
+                <div class="col-md-4 column">
+                </div>
+            </div>
+        </div>
+        <div class="grid_3 grid_5 w3ls">
+            <h3> Products description</h3>
+            <div class="alert alert-success" role="alert">
+               
+
+            <div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="tabbable" id="tabs-252904">
+                <ul class="nav nav-tabs tab_cp text-center">
+                    <li class="active tab_cb">
+                         <a   href="#panel-121704" data-toggle="tab">Product Details</a>
+                    </li>
+                    <li>
+                         <a   href="#panel-324368" data-toggle="tab">Contact US</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-121704">
+                        <p>
+                              {dede:field name='bodyself'/}
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="panel-324368">
+                        <p>
+
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+
+
+
+    
+.show{
+border: none !important;
+display: block;
+
+ border-top:1px solid #f3f3f3;
+ border-left: 1px solid #f3f3f3;
+
+ border-right: 1px solid #f3f3f3;
+
+color:red;
+
+    }
+
+.tab_cp li{
+    padding:5px 0 5px 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+     display: block;
+    width: auto;
+    height: 36px;
+  
+} 
+
+.tab_cp:nth-child(2){
+margin-left:50px;
+
+}
+.tab_cp li:actived {
+border: none !important;
+
+}  
+
+</style>
+
+
+
+
+
+
+
+
+
+              
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //typography -->
+<!-- distance -->
+<section class="distance-w3 py-md-5">
+    <div class="container py-4 mt-2">
+        <div class="row">
+            <div class="col-md-8 distance-agile-left">
+                <h4 class="mt-2">The Safest Distance Between Two Points.</h4>
+            </div>
+            <div class="col-md-4 distance-agile-right">
+                {dede:global.cfg_sendemail/}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //distance -->
+{dede:include filename="footer.htm"/}

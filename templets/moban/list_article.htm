@@ -1,0 +1,106 @@
+{dede:include filename="header.htm"/}
+</section>
+<!--Gallery-->
+<section class="gallery py-md-5">
+    <div class="container py-4 mt-2">
+        <h3 class="tittle-w3ls text-center mb-3">Models</h3>
+        <p class="tit text-center mx-auto">ASA BEARING CO.,LTD Had Been Cooperate And Atten Official Authorised Distributors For Some Of The World's Leading Manufacturers Like SKF, TIMKEN, KOYO, FAG, NSK, NTN, IKO, NACHI, INA.</p>
+        <div class="row agile_gallery_grids w3-agile demo pt-4 mt-md-5">
+            {dede:list pagesize='11' titlelen='99' infolen='50'}
+            <div class="col-md-6 gal-sec mt-50">
+                <div class="gallery-grid1">
+                    <a title="Attractive home purchase offers." href="[field:arcurl/]">
+                        <img src="[field:picname/]" alt=" " class="img-responsive" />
+                        <div class="p-mask">
+                            <h4>[field:title/]</h4>
+                            <p>[field:infos/]...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {/dede:list}
+            <br />
+            <br />
+            <br />
+            <div class="my_pages container-fluid">
+                <ul>{dede:pagelist listitem="index,end,pre,next,pageno" listsize="3" pagelang=""/}</ul>
+            </div>
+        </div>
+    </div>
+</section>
+<style type="text/css">
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.my_pages {
+    clear: both !important;
+    padding: 5px 0 0;
+    text-align: center;
+    margin: 5px auto;
+    line-height: 30px;
+}
+
+.my_pages ul {
+    text-align: center;
+    list-style: none;
+}
+
+.my_pages ul li {
+    list-style: none;
+    text-align: center;
+    height: 24px;
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.my_pages ul li a {
+    background: #fff;
+    color: #555;
+    display: inline;
+    height: 24px;
+    overflow: hidden;
+    padding: 6px 10px;
+    margin: 0;
+    border: #999 1px solid;
+}
+
+.my_pages ul li a:hover {
+    color: #fff;
+    background: #FF6600;
+    border: #FF6600 1px solid;
+    height: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.my_pages ul li.thisclass a {
+    background: #FF6600;
+    border: #FF6600 1px solid;
+    height: 24px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 700;
+}
+</style>
+<!--//Gallery-->
+<!-- distance -->
+<section class="distance-w3 py-md-5">
+    <div class="container py-4 mt-2">
+        <div class="row">
+            <div class="col-md-8 distance-agile-left">
+                <h4 class="mt-2">The Safest Distance Between Two Points.</h4>
+            </div>
+            <div class="col-md-4 distance-agile-right">
+                {dede:global.cfg_sendemail/}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //distance -->
+{dede:include filename="footer.htm"/}

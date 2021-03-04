@@ -1,0 +1,63 @@
+{dede:include filename="header.htm"/}
+<!-- contact -->
+<div class="w3ls-section banner-single py-md-5">
+    <div class="container py-4 mt-2">
+        <h3 class="tittle-w3ls text-center mb-3">Contact Us</h3>
+        <p class="tit text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur dolorum, voluptatum possimus temporibus vel ab, nesciunt quod!</p>
+        <div class="row about-inner-main pt-4 mt-md-4">
+            <div class="col-md-6 contact-left">
+                <div class="agile-contact-top">
+                    <h4>address </h4>
+                    <p>1234k Avenue,Block-4,New York City.</p>
+                </div>
+                <div class="contact-bottom">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236161.09848425922!2d113.98761564658741!3d22.352980761016227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2z6aaZ5riv!5e0!3m2!1szh-CN!2sus!4v1614675200472!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 w3layouts-reg-form contact-form-row-agileinfo">
+                <h4 class="form-con-txt">send us a mail</h4>
+                <form action="/plus/diy.php" method="post" class="banner_form contact-inner-form">
+                    <input type="hidden" name="action" value="post" />
+                    <input type="hidden" name="diyid" value="1" />
+                    <input type="hidden" name="do" value="2" />
+                    <div class="contact-form-left contact-field1">
+                        <div class="sec-left">
+                            <label class="contact-form-text">Name</label>
+                            <input placeholder="your name " name='name' id='name' type="text" required="">
+                        </div>
+                        <div class="sec-right">
+                            <label class="contact-form-text">Email</label>
+                            <input placeholder="xxx@xx.com " name='email' id='email' type="email" required="">
+                        </div>
+                    </div>
+                    <div class="contact-form-right contact-field2">
+                        <input type="submit" name="submit" value="send message">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-tx contact-field3">
+                        <label class="contact-form-text">Address</label>
+                        <textarea placeholder="your address" name='address' id='address' required=""></textarea>
+                    </div>
+                    <input type="hidden" name="dede_fields" value="name,text;email,text;address,text" />
+                    <input type="hidden" name="dede_fieldshash" value="7c831144b6fc424a779e3d18fc6a90ae" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact -->
+<!-- distance -->
+<section class="distance-w3 py-md-5">
+    <div class="container py-4 mt-2">
+        <div class="row">
+            <div class="col-md-8 distance-agile-left">
+                <h4 class="mt-2">The Safest Distance Between Two Points.</h4>
+            </div>
+            <div class="col-md-4 distance-agile-right">
+                {dede:global.cfg_sendemail/}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //distance -->
+{dede:include filename="footer.htm"/}

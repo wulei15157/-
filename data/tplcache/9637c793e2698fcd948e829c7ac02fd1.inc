@@ -1,0 +1,1 @@
+{dede:img text='' width='' height=''} /d/file/products/skf/2019-06-10/SY 55 WF.jpg {/dede:img}
